@@ -1,0 +1,44 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include('partials/head') %>
+
+		<title>Singin</title>
+	</head>
+	<body>
+		<%- include('partials/navbar') %>
+		<div class="container p-4 mt-4 rounded-3 bg-primary-subtle">
+			<div class="d-flex justify-content-center">
+				<h1 class="">Signin</h1>
+			</div>
+			<form action="/user/signin" method="post">
+				<div class="mb-3">
+					<label for="email" class="form-label">Email address</label>
+					<input
+						type="email"
+						class="form-control"
+						id="email"
+						name="email"
+						aria-describedby="emailHelp"
+					/>
+					<div id="emailHelp" class="form-text">
+						We'll never share your email with anyone else.
+					</div>
+				</div>
+				<div class="mb-3">
+					<label for="password" class="form-label">Password</label>
+					<input
+						type="password"
+						class="form-control"
+						id="password"
+						name="password"
+					/>
+				</div>
+				<button type="submit" class="btn btn-primary">Sign in</button>
+			</form>
+		</div>
+		<%- include('partials/scripts') %>
+	</body>
+</html>
