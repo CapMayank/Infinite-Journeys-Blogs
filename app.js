@@ -1,7 +1,6 @@
 /** @format */
 
 require("dotenv").config();
-console.log(process.env);
 path = require("path");
 const express = require("express");
 const mongoose = require("mongoose");
